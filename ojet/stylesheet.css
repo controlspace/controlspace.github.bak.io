@@ -1,0 +1,356 @@
+/*** uncss> filename: css/oj-alta-min.css ***/
+
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+input {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+[data-bind*="ojComponent"]:not(.oj-component-initnode) {
+  visibility: hidden;
+}
+
+html {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 0.875em;
+}
+
+body {
+  background-image: url("images/texture.png");
+  background-repeat: repeat;
+  background-position: top left;
+  color: #333;
+  background-color: #fff;
+}
+
+h1 {
+  color: #252525;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  margin: 8px 0;
+  padding: 0 0 2px;
+}
+
+h1 {
+  font-size: 1.429rem;
+}
+
+p {
+  margin: 0 0 12px 0;
+}
+
+ul {
+  margin: 12px 0;
+  padding-left: 40px;
+}
+
+@font-face {
+  font-family: 'Alta Icon Font';
+  src: url("fonts/JetFW_iconfont.woff") format("woff");
+}
+
+.oj-panel {
+  border: 1px solid #d6dfe6;
+  background-color: #fff;
+  border-radius: 1px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0.8571rem;
+  position: relative;
+}
+
+.oj-panel-alt1 {
+  background-color: #eff2f5;
+  border-color: #d6dfe6;
+}
+
+.oj-panel-alt2 {
+  background-color: #e8f2fb;
+  border-color: #d1e6f9;
+}
+
+input.oj-button::-moz-focus-inner,
+button.oj-button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input.oj-pagingcontrol-nav-input::-moz-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+input.oj-pagingcontrol-nav-input:-ms-input-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-inputtext-input::-moz-placeholder,
+.oj-inputpassword-input::-moz-placeholder,
+.oj-textarea-input::-moz-placeholder,
+.oj-inputtext-nocomp::-moz-placeholder,
+.oj-inputpassword-nocomp::-moz-placeholder,
+.oj-textarea-nocomp::-moz-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-inputtext-input:-ms-input-placeholder,
+.oj-inputpassword-input:-ms-input-placeholder,
+.oj-textarea-input:-ms-input-placeholder,
+.oj-inputtext-nocomp:-ms-input-placeholder,
+.oj-inputpassword-nocomp:-ms-input-placeholder,
+.oj-textarea-nocomp:-ms-input-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-inputnumber-input::-moz-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-inputnumber-input:-ms-input-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-inputdatetime-input::-moz-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-inputdatetime-input:-ms-input-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-combobox-choice::-moz-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-combobox-choice:-ms-input-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-combobox-input::-moz-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-combobox-input:-ms-input-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-combobox-choices::-moz-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-combobox-choices:-ms-input-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-select-choice::-moz-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-select-choice:-ms-input-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-select-choices::-moz-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-select-choices:-ms-input-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-select-multi .oj-listbox-input::-moz-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-select-multi .oj-listbox-input:-ms-input-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-select-select::-moz-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-select-select:-ms-input-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-inputsearch-choice::-moz-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-inputsearch-choice:-ms-input-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-inputsearch-input::-moz-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+.oj-inputsearch-input:-ms-input-placeholder {
+  color: #737373;
+  opacity: 1;
+  font-style: italic;
+}
+
+/*** uncss> filename: css/styles.css ***/
+
+#sidebar {
+  flex: 3;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section {
+  flex: 7;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.author {
+  margin-right: auto;
+}
+
+.date {
+  margin-left: auto;
+}
+
+.no-selection {
+  flex-direction: row;
+  align-items: center;
+}
+
+.no-selection h1 {
+  width: 100%;
+  opacity: 0.5;
+}
+
+#article-list {
+  width: 100%;
+  overflow-y: auto;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#article-content {
+  text-align: left;
+  padding: 1rem;
+}
+
+.info {
+  display: flex;
+  padding: 2rem;
+  align-content: space-between;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 99;
+  background-image: url("images/texture.png");
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*** uncss> filename: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css ***/
+
+/*!
+ *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
