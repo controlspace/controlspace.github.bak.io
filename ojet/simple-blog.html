@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Single Page Application - Using Oracle JET</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/oj-alta-min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet"/>
+    </head>
+    <body class="flex row">
+		<!-- Usually these things go into different templates
+			 like listed in index-if-running-on-applicationserver.html.
+			 However Chrome disables that feature of loading templates from other html
+			 files(works fine in firefox) if we are accessing the html file directly,
+			 there won't be any issue using templates if these pages are being served by an app server.
+			 Hence I'm keeping everything in index.html; Hope this is fine.
+			 We can allow file access by opening chrome with a flag --allow-file-access-from-files.
+			 Not sure your requirement allows that, hence coding all templates inside one html. -->
+
+		<!-- ko ifnot: loaded() === true -->
+		<div class="overlay flex row"><h1>Loading...</h1></div>
+		<!-- /ko -->
+
+		<nav id = "sidebar" class="flex column">
+			<input id="article-search"
+				data-bind="ojComponent: {
+					component: 'ojInputSearch',
+					placeholder: 'Article Search',
+					optionChange: searchHandler}"/>
+
+			<nav id="article-list">
+				<ul data-bind="ojComponent: {
+					component: 'ojListView',
+					data: dataSource,
+					selectionMode: 'single',
+					optionChange: articleSelected.bind($data),
+					item:
+					{
+						renderer: function(context)
+						{
+							return context['data']['title'];
+						}
+					}}">
+				</ul>
+			</nav>
+		</nav>
+		<!-- ko if: selectedItem() -->
+		<div class="main-section hiddeninitially flex column" id = "main-section" data-bind="css: { hiddeninitially: !loaded() }">
+			<article>
+				<h1>{{selectedItem()['title']}}</h1>
+				<p id ="article-content">{{selectedItem()['content']}}</p>
+				<footer id="article-info" class="info flex">
+					<label class="meta author">{{selectedItem()['userName']}}</label>
+					<label class="meta date">{{new Date(selectedItem()['date']).toLocaleDateString('en-US')}}</label>
+				</footer>
+			</article>
+			<hr>
+			<section id="article-comments">
+				<h1>Comments</h1>
+				<div data-bind="foreach: selectedItem()['comments']">
+					<article class="comment" data-bind="style : {'margin-left': 30*depth+'px'}">
+						<p class = "comment-content" >{{content}}</p>
+						<footer class="info flex">
+							<label class="meta author">{{userName}}</label>
+							<label class="meta date">{{new Date(date).toLocaleDateString('en-US')}}</label>
+						</footer>
+					</article>
+				</div>
+			</section>
+		</div>
+		<!-- /ko -->
+     <script src="js/require.js" data-main="js/main"></script>
+    </body>
+</html>
