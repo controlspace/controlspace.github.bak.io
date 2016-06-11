@@ -3,7 +3,10 @@
 	  <div class="oj-flex-start" >This is the title</div>
 	  <div class="oj-flex-item"></div>
 	  <div class="oj-flex-end oj-panel-alt1 oj-margin-start">
-		  <i class="fa fa-arrows-v oj-margin-start oj-padding-horizontal hoverable" data-bind="click: collapse"></i>
+		  <i id = "min-max-icon" class="fa oj-margin-start oj-padding-horizontal hoverable" 
+			 data-bind="click: collapse,
+						css: {'fa-chevron-circle-down': collapsed(),
+							  'fa-chevron-circle-up':!collapsed()}"></i>
 		  <i class="fa fa-close oj-padding-horizontal hoverable" data-bind="click: close"></i>
 	  </div>
   </div>

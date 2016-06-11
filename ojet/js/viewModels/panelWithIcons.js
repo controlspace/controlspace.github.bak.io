@@ -9,13 +9,16 @@ define(['ojs/ojcore', 'knockout'
 	function panelWithIconsContentViewModel() {
 		var self = this;
 		self.val = "Hello Punch";
-		
+		self.collapsed = ko.observable(false);
+
 		self.collapse = function collapse(event) {
 		  $("#collapsableContent").slideToggle();
+		  self.collapsed(!self.collapsed());
 		};
 		
 		self.close = function collapse(event) {
 		  $("#panel").remove();
+		  
 		};
 	}
 	
