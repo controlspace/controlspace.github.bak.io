@@ -56,7 +56,8 @@ var config = {
   databaseURL: "https://controlspace-github-io-92200.firebaseio.com",
   storageBucket: "controlspace-github-io-92200.appspot.com"
 };
-var debug = true;
+
+var debug = false;
 try{ 
 	
 	if(!app)
