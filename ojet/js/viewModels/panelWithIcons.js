@@ -18,7 +18,6 @@ define(['ojs/ojcore', 'knockout'
 		
 		self.close = function collapse(event) {
 		  $("#panel").remove();
-		  
 		};
 	}
 	
