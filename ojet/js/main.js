@@ -2,9 +2,7 @@
 
 require(['knockout','ojs/ojcore', 'jquery',
   'knockout.punches','ojs/ojknockout',
-  'ojs/ojmodule',
-  'ojs/ojselectcombobox', 'ojs/ojlistview', 'ojs/ojarraytabledatasource',
-  'Service', 'comment-sorter'
+  'ojs/ojmodule'
 ], function(ko, oj, $) {
     'use strict';
 	ko.punches.enableAll();
