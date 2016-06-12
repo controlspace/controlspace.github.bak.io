@@ -8,7 +8,7 @@ define(['ojs/ojcore', 'knockout'
 	 */
 	function panelWithIconsContentViewModel() {
 		var self = this;
-		self.val = "Hello Punch";
+		self.val = "I'm going to be collapsed, I have some text... ";
 		self.collapsed = ko.observable(false);
 
 		self.collapse = function collapse(event) {
